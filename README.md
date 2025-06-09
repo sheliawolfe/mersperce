@@ -1,2 +1,2 @@
 # mersperce
-oh wow look another myspace clone! windows93 knock off
+bday project again. can't show love, only code.
