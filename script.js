@@ -2,6 +2,19 @@ if (typeof(Storage) === "undefined") {
   console.log("Local storage not supported!");
 }
 
+const header = document.querySelector('h1');
+header.addEventListener('input', () => {
+  sessionStorage.setItem('my-header', header.textContent);
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  const saved = sessionStorage.getItem('my-header');
+  if (saved) {
+    document.querySelector('h1').textContent = saved;
+  }
+});
+
+
 const uploadInput = document.getElementById('upload-pic');
 const previewImg = document.getElementById('pfp');
 
