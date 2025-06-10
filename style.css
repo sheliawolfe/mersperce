@@ -204,6 +204,11 @@ h1 {
   pointer-events: auto;
 }
 
+h1[contenteditable="true"]:focus {
+  outline: none;
+  background-color: transparent;
+}
+
 .profile-sidebar ul {
   list-style-type: none;
   padding: 0;
